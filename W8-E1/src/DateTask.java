@@ -4,7 +4,7 @@ import java.util.Date;
 public class DateTask implements Runnable{
 	public void printDate(String currentThread) {
 		for(int i = 0; i < 5; i++) {
-			SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss");
+			SimpleDateFormat formatter = new SimpleDateFormat("D/MM/YYYY");
 		    Date date = new Date();
 			System.out.println(currentThread + " -> " + (i + 1) + ". Date is : " + formatter.format(date));
 		}
